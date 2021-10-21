@@ -6,24 +6,24 @@
   padding-top: 0;
 }
 
-.activity,
-.team {
+.activity-section__header,
+.team-section__header {
   margin-bottom: 50px;
 }
 
-.header {
+.activity-section__header {
   @include font(bold, 36px, 1.17, 0.03em);
   text-align: center;
 }
 
-.activity-item {
+.activity-list__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.activity-top-text {
+.activity-section__over-text {
   @include font(bold, 14px, 1.14, 0.03em);
   text-align: center;
   text-transform: uppercase;

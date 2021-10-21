@@ -13,23 +13,28 @@
   margin-right: 30px;
 }
 
-.our-team {
+.team-section {
   background-color: var(--third-background-color);
 }
 
-.member-info {
+.team-item__meta {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--third-text-color);
   text-align: center;
 }
 
-.team-member {
+.team-item__name {
   @include font(500, 16px, 1.19, 0.03em);
   margin-bottom: 10px;
 }
 
-.team-desc {
+.team-item__desc {
   @include font(normal, 16px, 1.19, 0.03em);
   color: var(--second-text-color);
+}
+
+.team-section__header {
+  @include font(bold, 36px, 1.17, 0.03em);
+  text-align: center;
 }

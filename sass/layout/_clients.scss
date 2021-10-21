@@ -1,4 +1,6 @@
-.clients-header {
+.clients-section__header {
+  @include font(bold, 36px, 1.17, 0.03em);
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -15,7 +17,7 @@
   }
 }
 
-.clients-link {
+.clients-item__link {
   @include flex();
   width: 100%;
   height: 100%;

@@ -51,24 +51,24 @@
   }
 }
 
-.label-text {
+.modal-form__text {
   display: block;
   margin-bottom: 4px;
 }
 
-.input-label {
+.modal-form__input {
   @include font(normal, 12px, 1.17, 0.01em);
   color: var(--second-text-color);
   display: block;
   margin-bottom: 10px;
 }
 
-.input-wrapper {
+.modal-form-wrapper {
   display: block;
   position: relative;
 }
 
-.input-icon {
+.modal-input__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -115,7 +115,7 @@
   margin: 0 auto;
 }
 
-.checkbox-text {
+.modal-checkbox__text {
   @include font(normal, 14px, 1.71, 0.03em);
   color: var(--second-text-color);
   @include flex();
@@ -135,11 +135,11 @@
   }
 }
 
-.checkbox-text-link {
+.modal-checkbox__text_accent {
   color: var(--accent-color);
 }
 
-.checkbox-text:checked svg {
+.modal-checkbox__text:checked svg {
   fill: var(--accent-color);
 }
 

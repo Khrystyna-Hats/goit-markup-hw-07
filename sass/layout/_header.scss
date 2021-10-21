@@ -5,11 +5,11 @@
   margin-right: 93px;
 }
 
-.accent-logo {
+.logo__accent {
   color: var(--accent-color);
 }
 
-.nav-link {
+.nav__link {
   display: block;
   @include font(500, 14px, 1.14, 0.02em);
   color: var(--main-text-color);
@@ -22,7 +22,7 @@
   }
 }
 
-.second-address-item {
+.extra-address__item {
   display: flex;
   align-items: center;
   &:not(:last-child) {
@@ -30,7 +30,7 @@
   }
 }
 
-.second-address-link {
+.extra-address__link {
   @include font(500, 14px, 1.14, 0.02em);
   color: var(--second-text-color);
   padding-top: 32px;
@@ -45,7 +45,7 @@
   }
 }
 
-.social-icon {
+.extra-address__icon {
   fill: currentColor;
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.second-address {
+.extra-address {
   display: flex;
   margin-left: auto;
 }
@@ -102,7 +102,7 @@ footer {
   }
 }
 
-.nav-item {
+.nav__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 50px;

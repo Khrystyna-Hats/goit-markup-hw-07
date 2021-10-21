@@ -10,9 +10,7 @@
 }
 
 .benefits-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex();
   width: 270px;
   height: 120px;
   border-radius: 4px;
@@ -21,18 +19,14 @@
 }
 
 .benefits-title {
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(bold, 14px, 1.14, 0.03em);
   text-align: left;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .benefits-desc {
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(normal, 14px, 1.71, 0.03em);
   text-align: left;
-  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }

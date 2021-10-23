@@ -17,11 +17,11 @@ h6,
 p,
 ul {
   margin: 0;
-  padding: 0;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 img {
@@ -47,7 +47,7 @@ body {
   background-color: #ffffff;
 }
 
-.link {
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -386,7 +386,7 @@ body {
   margin-left: auto;
 }
 
-.header-content {
+.main-header--flex {
   display: flex;
   align-items: center;
 }
@@ -405,11 +405,11 @@ footer {
   padding-bottom: 60px;
 }
 
-.current {
+.nav__link--current {
   color: var(--accent-color);
 }
 
-.current::after {
+.nav__link--current::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -484,7 +484,7 @@ footer {
   margin-right: 30px;
 }
 
-.benefits__icon {
+.benefits__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -518,21 +518,8 @@ footer {
   display: flex;
 }
 
-.activity-section {
+.section--no-top-padding {
   padding-top: 0;
-}
-
-.activity-section__header,
-.team-section__header {
-  margin-bottom: 50px;
-}
-
-.activity-section__header {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
 }
 
 .activity-list__item {
@@ -574,7 +561,7 @@ footer {
   margin-right: 30px;
 }
 
-.team-section {
+.section--gray-background {
   background-color: var(--third-background-color);
 }
 
@@ -601,15 +588,7 @@ footer {
   color: var(--second-text-color);
 }
 
-.team-section__header {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-.clients-section__header {
+.section__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -618,21 +597,21 @@ footer {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients {
   display: flex;
   justify-content: center;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-item__link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -644,7 +623,7 @@ footer {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-item__link:hover, .clients-item__link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -770,13 +749,13 @@ footer {
   margin-left: 10px;
 }
 
-.portfolio-list {
+.portfolio {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-btn {
+.portfolio__btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -790,34 +769,34 @@ footer {
   padding-right: 22px;
 }
 
-.portfolio-btn:hover, .portfolio-btn:focus {
+.portfolio__btn:hover, .portfolio__btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-item:not(:last-child) {
+.portfolio__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.project-list {
+.projects {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.project-header {
+.projects__header {
   font-size: 18px;
   line-height: 2;
   margin-bottom: 4px;
 }
 
-.project-card {
+.projects__card {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
 
-.project-card .project-header {
+.projects__card .projects__header {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -825,12 +804,12 @@ footer {
   text-align: Left;
 }
 
-.project-link {
+.projects__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover, .project-link:focus {
+.projects__link:hover, .projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -843,7 +822,7 @@ footer {
   text-align: left;
 }
 
-.card-content {
+.projects__meta {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -872,12 +851,12 @@ footer {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card:hover .project-top-text,
-.project-card:focus .project-top-text {
+.projects__card:hover .project-top-text,
+.projects__card:focus .project-top-text {
   transform: translateY(0);
 }
 
-.project-top-wrapper {
+.projects--top-wrapper {
   position: relative;
   overflow: hidden;
 }

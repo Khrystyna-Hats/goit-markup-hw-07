@@ -68,7 +68,7 @@
   margin-left: auto;
 }
 
-.header-content {
+.main-header--flex {
   display: flex;
   align-items: center;
 }
@@ -87,7 +87,7 @@ footer {
   padding-bottom: 60px;
 }
 
-.current {
+.nav__link--current {
   color: var(--accent-color);
   &::after {
     content: '';

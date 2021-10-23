@@ -2,18 +2,8 @@
   display: flex;
 }
 
-.activity-section {
+.section--no-top-padding {
   padding-top: 0;
-}
-
-.activity-section__header,
-.team-section__header {
-  margin-bottom: 50px;
-}
-
-.activity-section__header {
-  @include font(bold, 36px, 1.17, 0.03em);
-  text-align: center;
 }
 
 .activity-list__item {
